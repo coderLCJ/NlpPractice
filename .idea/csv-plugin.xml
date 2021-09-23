@@ -10,10 +10,17 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\FB15k\1.csv">
+        <entry key="\TextPreprocessing\comment\dev.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\TextPreprocessing\comment\train.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="&#9;" />
             </Attribute>
           </value>
         </entry>

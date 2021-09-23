@@ -1,2 +1,0 @@
-git config --global http.sslBackend "openssl"
-git config --global http.sslCAInfo "D:\git\Git\mingw64\ssl\cert.pem"
