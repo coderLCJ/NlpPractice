@@ -68,6 +68,6 @@ def train(animator, ep):
 
 animator = Animator(xlabel='epoch', xlim=[0, 10], ylim=[-5, 5],
                         legend=['train loss', 'test acc'])
-for i in range(10):
+for i in range(100):
     train(animator, i)
 animator.stop()

@@ -16,7 +16,6 @@ import torch.nn.functional as F
 import torch.optim as optim
 from Animator import *
 
-
 transform = transforms.Compose(
     [transforms.ToTensor(),
      transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
@@ -37,10 +36,12 @@ classes = ('plane', 'car', 'bird', 'cat',
 
 # 展示图像的函数
 def imshow(img):
-    img = img / 2 + 0.5     # unnormalize
+    img = img / 2 + 0.5  # unnormalize
     npimg = img.numpy()
     plt.imshow(np.transpose(npimg, (1, 2, 0)))
     plt.show()
+
+
 # # 获取随机数据
 # dataiter = iter(trainloader)
 # images, labels = dataiter.next()
@@ -74,7 +75,7 @@ net = Net()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 animator = Animator(xlabel='epoch', xlim=[1, 10], ylim=[0, 2],
-                        legend=['loss', 'acc'])
+                    legend=['loss', 'acc'])
 # animator.add(epoch + 1, train_metrics + (test_acc,))
 animator.add(0, (2, 0))
 for epoch in range(10):  # 多批次循环
@@ -97,12 +98,12 @@ for epoch in range(10):  # 多批次循环
                 acc += 1
         # 打印状态信息
         running_loss += loss.item()
-        if i % 2000 == 1999:    # 每2000批次打印一次
+        if i % 2000 == 1999:  # 每2000批次打印一次
             print('[%d, %5d] loss: %.3f' %
                   (epoch + 1, i + 1, running_loss / 2000))
             print('[%d, %5d] acc: %.3f%%' %
-                  (epoch + 1, i + 1, acc/8000*100))
-            animator.add(epoch + 1, (running_loss/2000, acc/8000))
+                  (epoch + 1, i + 1, acc / 8000 * 100))
+            animator.add(epoch + 1, (running_loss / 2000, acc / 8000))
             running_loss = 0.0
             acc = 0.0
 print('Finished Training')
