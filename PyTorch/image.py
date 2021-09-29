@@ -72,7 +72,6 @@ class Net(nn.Module):
         x = self.fc3(x)
         return x
 
-
 net = Net()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
@@ -80,17 +79,18 @@ animator = Animator(xlabel='epoch', xlim=[1, 10], ylim=[0, 2],
                     legend=['loss', 'acc'])
 # animator.add(epoch + 1, train_metrics + (test_acc,))
 animator.add(0, (2, 0))
+
 for epoch in range(10):  # 多批次循环
     running_loss = 0.0
     acc = 0.0
     for i, data in enumerate(trainloader, 0):
         # 获取输入
         inputs, labels = data
+        # print(inputs.size())
         # 梯度置0
         optimizer.zero_grad()
         # print(inputs[0], '\ntp = ', type(inputs))     # 输入数据 tensor
         # print(labels[0], '\ntp = ', type(labels))       # 标签 tensor
-        exit()
         # 正向传播，反向传播，优化
         outputs = net(inputs)
         loss = criterion(outputs, labels)
@@ -110,4 +110,5 @@ for epoch in range(10):  # 多批次循环
             animator.add(epoch + 1, (running_loss / 2000, acc / 8000))
             running_loss = 0.0
             acc = 0.0
+
 print('Finished Training')

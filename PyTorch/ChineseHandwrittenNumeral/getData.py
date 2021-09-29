@@ -12,25 +12,42 @@ import numpy as np
 import torch
 from matplotlib import image as mpimage, pyplot as plt
 
-train_size = 4
+train_size = 4000
 test_size = 1310
 image_name = os.listdir('../data/RawDataset')
 
-# print(image_data[0], len(image_data))
-# for i in range(10):
-#     print(image_data[i])
-#     print(image_data[i].split(',')[2].split('}'[0]))
+def randNum(begin, end):
+    size = end - begin
+    book = {}
+    i = 0
+    while i < size:
+        pos = np.random.randint(begin, end)
+        if pos not in book.keys():
+            book[pos] = 1
+            i += 1
+            yield pos
 
 def getTrainData():
-    train_data = torch.zeros((1, train_size), dtype=torch.float32)
-    train_label = torch.zeros((1, train_size), dtype=torch.float32)
-    for i in range(train_size):
+    train_data = torch.zeros(train_size, 1, 1, 64, 64)
+    train_label = torch.zeros(train_size, 1)
+    for pos, i in enumerate(randNum(0, train_size)):
         img = mpimage.imread('../data/RawDataset/' + image_name[i])
-        # train_data.
-        # train_label.append(image_name[i].split(',')[2].split('}'[0][0]))
+        train_data[pos] = torch.tensor(img)
+        train_label[pos] = (int(image_name[i].split(',')[2].split('}'[0][0])[0]))-1
 
-    print(type(train_data))
-    print(train_label)
+    return train_data, train_label
 
 
-getTrainData()
+def getTestData():
+    test_data = torch.zeros(test_size, 1, 1, 64, 64)
+    test_label = torch.zeros(test_size)
+    for pos, i in enumerate(randNum(train_size, train_size+test_size)):
+        img = mpimage.imread('../data/RawDataset/' + image_name[i])
+        test_data[pos] = torch.tensor(img)
+        test_label[pos] = (int(image_name[i].split(',')[2].split('}'[0][0])[0]))-1
+
+    return test_data, test_label
+
+
+# getTrainData()
+# torch.set_printoptions(profile="full")    打印全部tensor

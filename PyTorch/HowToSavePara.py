@@ -25,7 +25,7 @@ class Net(Module):
         x = self.fc1(x)
         return x
 
-
+# torch.save(rnn.state_dict(), 'rnn.pt')    保存
 m_state_dict = torch.load('linear.pt')
 new_m = Net()
 new_m.load_state_dict(m_state_dict)
