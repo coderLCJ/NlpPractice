@@ -7,7 +7,7 @@
 # Date:         2021/9/28
 # ---------------------------------------------
 import torch
-from torch.nn import Linear, Module, MSELoss
+from torch.nn import Linear, Module, MSELoss, Sequential
 from torch.optim import SGD
 import numpy as np
 import pandas as pd
@@ -46,7 +46,7 @@ class Net(Module):
 data, label = createData()
 epochs = 100
 criterion = MSELoss()
-net = Net()
+net = Net()     # 可替换成 Sequential(Linear(1, 1))
 optimizer = SGD(net.parameters(), lr=0.1)
 
 for epoch in range(epochs):
@@ -65,7 +65,10 @@ for epoch in range(epochs):
 [w, b] = net.parameters()
 w = w.item()
 b = b.item()
+print(w, b)
+# 4.534360885620117 7.273062229156494
 x = torch.rand(256)
 y = w * x + b
 plt.plot(x, y)
 plt.show()
+torch.save(net.state_dict(), 'linear.pt')

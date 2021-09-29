@@ -39,6 +39,8 @@ def imshow(img):
     img = img / 2 + 0.5  # unnormalize
     npimg = img.numpy()
     plt.imshow(np.transpose(npimg, (1, 2, 0)))
+    print(np.transpose(npimg, (1, 2, 0)))
+    print(np.transpose(npimg, (1, 2, 0)))
     plt.show()
 
 
@@ -86,7 +88,9 @@ for epoch in range(10):  # 多批次循环
         inputs, labels = data
         # 梯度置0
         optimizer.zero_grad()
-
+        # print(inputs[0], '\ntp = ', type(inputs))     # 输入数据 tensor
+        # print(labels[0], '\ntp = ', type(labels))       # 标签 tensor
+        exit()
         # 正向传播，反向传播，优化
         outputs = net(inputs)
         loss = criterion(outputs, labels)
