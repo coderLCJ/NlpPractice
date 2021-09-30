@@ -1,6 +1,9 @@
 import random
 
 import torch
+import numpy as np
 
-x = torch.rand(1)[0]
-print(x.item())
+x = [1, 2, 3, 4]
+print(x)
+np.random.shuffle(x)
+print(x)
