@@ -10,6 +10,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
+from d2l import torch
 
 def get_data():
     f = open('data/german.data-numeric')
@@ -35,3 +36,4 @@ class Net(nn.Module):
         x = F.sigmoid(x)
         return x
 
+t = optim.ASGD
