@@ -10,7 +10,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from d2l import torch
 
 def get_data():
     f = open('data/german.data-numeric')
@@ -22,7 +21,7 @@ def get_data():
         data[i] = torch.tensor(d)
         label[i] = torch.tensor(float(line[-1]) - 1)
     # print(data)
-    train_data, train_label = data[:900], label[:900]
+    train_data, train_label = data, label
     test_data, test_label = data[900:], label[900:]
     return train_data, train_label, test_data, test_label
 
@@ -41,18 +40,17 @@ trainData, trainLabel, testData, testLabel = get_data()
 net = Net()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(net.parameters())
-
 acc = 0.0
 loss_ = 0.0
 s = 0.0
-for epoch in range(6000):
+for epoch in range(1000):
     net.zero_grad()
     outputs = net(trainData)
     loss = criterion(outputs, trainLabel.long())
     loss.backward()
     optimizer.step()
     loss_ += loss
-    for i in range(900):
+    for i in range(1000):
         if outputs[i][0] > outputs[i][1] and trainLabel[i] == 0 or outputs[i][1] > outputs[i][0] and trainLabel[i] == 1:
             acc += 1
         s += 1
