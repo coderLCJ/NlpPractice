@@ -69,7 +69,6 @@ target = torch.tensor(__, dtype=torch.float32)
 net = Net()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(net.parameters())
-los = 0
 
 for epoch in range(1000):
     x1 = inputs[:, 0]

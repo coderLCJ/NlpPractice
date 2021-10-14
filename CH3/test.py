@@ -12,11 +12,10 @@ import torch.nn.functional as F
 import torch.optim as optim
 import numpy as np
 
-n = nn.Linear(2, 4)
-x = torch.tensor([1, 2], dtype=torch.float32)
+file_path = '../../DATA/twitter_en/chat.txt'
 
-print(x)
-[w, b] = n.parameters()
-print(w, b)
-print(w.shape)
-print(n(x))
+
+net = nn.Embedding(6, 6)
+id = torch.tensor([1, 2, 3, 4, 5, 6])
+print(net(id[0]))
+print(net(torch.tensor(1)))
