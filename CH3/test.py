@@ -15,7 +15,9 @@ import numpy as np
 file_path = '../../DATA/twitter_en/chat.txt'
 
 
-net = nn.Embedding(6, 6)
-id = torch.tensor([1, 2, 3, 4, 5, 6])
-print(net(id[0]))
-print(net(torch.tensor(1)))
+p1 = nn.CrossEntropyLoss()
+p2 = nn.NLLLoss()
+
+x = torch.tensor([[0., 0., 100.]])
+y = torch.tensor([2.])
+print(p1(x, y.long()))
