@@ -1,0 +1,11 @@
+Oxford
+Location: 450900E 207200N, Lat 51.761 Lon -1.262, 63 metres amsl
+Estimated data is marked with a * after the value.
+Missing data (more than 2 days missing in month) is marked by  ---.
+Sunshine data taken from an automatic Kipp & Zonen sensor marked with a #, otherwise sunshine data taken from a Campbell Stokes recorder.
+   yyyy  mm   tmax    tmin      af    rain     sun
+              degC    degC    days      mm   hours
+   1853   1    8.4     2.7       4    62.8     ---
+   1853   2    3.2    -1.8      19    29.3     ---
+   2018  10   15.3*    7.2*      3*   52.3*  131.1*  Provisional
+   2018  11   11.4*    5.7*      2*   61.7*   76.8*  Provisional

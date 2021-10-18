@@ -1,8 +1,16 @@
 # -*- coding: utf-8 -*-#
 
 # ---------------------------------------------
-# Name:         RNN
+# Name:         LSTM
 # Description:  
+# Author:       Laity
+# Date:         2021/10/17
+# ---------------------------------------------
+# -*- coding: utf-8 -*-#
+
+# ---------------------------------------------
+# Name:         RNN
+# Description:
 # Author:       Laity
 # Date:         2021/10/16
 # ---------------------------------------------
@@ -11,7 +19,7 @@ from torch import nn
 import numpy as np
 import matplotlib.pyplot as plt
 
-TIME_STEP = 10
+TIME_STEP = 40
 INPUT_SIZE = 1
 
 # plt.plot(steps, x_np, 'c-', label='input(sin)')
@@ -19,10 +27,10 @@ INPUT_SIZE = 1
 # plt.legend(loc='best')
 # plt.show()
 
-class RNN(nn.Module):
+class LSTM(nn.Module):
     def __init__(self):
-        super(RNN, self).__init__()
-        self.rnn = nn.RNN(
+        super(LSTM, self).__init__()
+        self.lstm = nn.LSTM(
             input_size=INPUT_SIZE,
             hidden_size=32,
             num_layers=1,
@@ -30,33 +38,32 @@ class RNN(nn.Module):
         )
         self.out = nn.Linear(32, 1)
 
-    def forward(self, x, h_state):
+    def forward(self, x):
         # x (batch, time_step, input_size)
         # h_state (n_layers, batch ,hidden_size)
         # r_out (batch, time_step, hidden_size)
-        r_out, h_state = self.rnn(x, h_state)
+        r_out, h_state = self.lstm(x)
         r_out = r_out.reshape(-1,32)
         outs = self.out(r_out)
-        return outs, h_state
+        return outs
 
 
-rnn = RNN()
-optimizer = torch.optim.Adam(rnn.parameters())
+rnn = LSTM()
+optimizer = torch.optim.Adam(rnn.parameters(), lr=0.02)
 criterion = nn.MSELoss()
-EPOCHS = 300
-h_state = None
+EPOCHS = 3000
+
 
 for step in range(EPOCHS):
-    start, end = step*np.pi, (step+1)*np.pi
+    start, end = step*np.pi, (step+4)*np.pi
     steps = np.linspace(start, end, TIME_STEP, dtype=np.float32) # 均匀分成 TIME_STEP 份
     # np.newaxis: 插入新维度
     x_np = np.sin(steps)
     y_np = np.cos(steps)
     x = torch.from_numpy(x_np[np.newaxis, :, np.newaxis])
     y = torch.from_numpy(y_np[:, np.newaxis])
-    outs, h_state = rnn(x, h_state)
+    outs = rnn(x)
 
-    h_state = h_state.detach()  # 这一步很重要 不计算梯度将隐藏层数值传递
     rnn.zero_grad()
     loss = criterion(outs, y)
     loss.backward()

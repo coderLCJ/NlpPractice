@@ -1,0 +1,2 @@
+speed of light             299792458.0        m/s
+gravitational constant     6.67259e-11        m**3/kg/s**2
