@@ -30,5 +30,6 @@ def tokenize(lines, token='word'):
 
 if __name__ == '__main__':
     corpus, vocab = d2l.load_corpus_time_machine()
-    for i in range(50):
-        print(corpus[i], vocab.idx_to_token[corpus[i]])
+    x = torch.tensor([[1, 2], [3, 4]])
+    y = torch.tensor([[2, 3], [4, 5]])
+    print(x@y)

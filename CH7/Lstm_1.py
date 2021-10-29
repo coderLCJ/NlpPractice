@@ -60,7 +60,7 @@ loss_func = nn.MSELoss()
   # 要使用初始 hidden state, 可以设成 None
 
 for step in range(100):
-    start, end = step * np.pi, (step+1)*np.pi   # time steps
+    start, end = step * np.pi, (step+2)*np.pi   # time steps
     # sin 预测 cos
     steps = np.linspace(start, end, 10, dtype=np.float32)
     x_np = np.sin(steps)    # float32 for converting torch FloatTensor

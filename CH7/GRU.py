@@ -1,8 +1,16 @@
 # -*- coding: utf-8 -*-#
 
 # ---------------------------------------------
-# Name:         RNN
+# Name:         GRU
 # Description:  
+# Author:       Laity
+# Date:         2021/10/27
+# ---------------------------------------------
+# -*- coding: utf-8 -*-#
+
+# ---------------------------------------------
+# Name:         RNN
+# Description:
 # Author:       Laity
 # Date:         2021/10/16
 # ---------------------------------------------
@@ -22,20 +30,20 @@ INPUT_SIZE = 1
 class RNN(nn.Module):
     def __init__(self):
         super(RNN, self).__init__()
-        self.rnn = nn.RNN(
+        self.rnn = nn.GRU(
             input_size=INPUT_SIZE,
-            hidden_size=64,
+            hidden_size=32,
             num_layers=1,
             batch_first=True
         )
-        self.out = nn.Linear(64, 1)
+        self.out = nn.Linear(32, 1)
 
     def forward(self, x, h_state):
         # x (batch, time_step, input_size)
         # h_state (n_layers, batch ,hidden_size)
         # r_out (batch, time_step, hidden_size)
         r_out, h_state = self.rnn(x, h_state)
-        r_out = r_out.reshape(-1,64)
+        r_out = r_out.reshape(-1,32)
         outs = self.out(r_out)
         return outs, h_state
 
@@ -55,11 +63,12 @@ for step in range(EPOCHS):
     x = torch.from_numpy(x_np[np.newaxis, :, np.newaxis])
     y = torch.from_numpy(y_np[:, np.newaxis])
     outs, h_state = rnn(x, h_state)
+    exit(0)
 
     h_state = h_state.detach()  # 这一步很重要 不计算梯度将隐藏层数值传递
     rnn.zero_grad()
     loss = criterion(outs, y)
-    loss.backward()
+    loss.backward(retain_graph=True)
     optimizer.step()
     if step % 10 == 0:
         # a.flatten()：a是个数组，a.flatten()

@@ -1,101 +1,76 @@
 # -*- coding: utf-8 -*-#
 
 # ---------------------------------------------
-# Name:         test
-# Description:  
+# Name:         RNN to LSTM
+# Description:
 # Author:       Laity
-# Date:         2021/10/17
+# Date:         2021/10/16
 # ---------------------------------------------
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt  # matplotlib inline
-import math
-
-dataset = []
-for data in np.arange(0, 3, .01):
-    data = math.sin(data * math.pi)
-    dataset.append(data)
-dataset = np.array(dataset)
-dataset = dataset.astype('float32')
-max_value = np.max(dataset)
-min_value = np.min(dataset)
-scalar = max_value - min_value
-dataset = list(map(lambda x: x / scalar, dataset))
-
-
-def create_dataset(dataset, look_back=3):
-    dataX, dataY = [], []
-    for i in range(len(dataset) - look_back):
-        a = dataset[i:(i + look_back)]
-        dataX.append(a)
-        dataY.append(dataset[i + look_back])
-    return np.array(dataX), np.array(dataY)
-
-
-data_X, data_Y = create_dataset(dataset)
-
-train_size = int(len(data_X) * 0.7)
-test_size = len(data_X) - train_size
-train_X = data_X[:train_size]
-train_Y = data_Y[:train_size]
-test_X = data_X[train_size:]
-test_Y = data_Y[train_size:]
-
 import torch
-
-train_X = train_X.reshape(-1, 1, 3)
-train_Y = train_Y.reshape(-1, 1, 1)
-test_X = test_X.reshape(-1, 1, 3)
-
-train_x = torch.from_numpy(train_X)
-train_y = torch.from_numpy(train_Y)
-test_x = torch.from_numpy(test_X)
 from torch import nn
-from torch.autograd import Variable
+import numpy as np
+import matplotlib.pyplot as plt
+
+TIME_STEP = 10
+INPUT_SIZE = 1
+
+# plt.plot(steps, x_np, 'c-', label='input(sin)')
+# plt.plot(steps, y_np, 'r-', label='target(cos)')
+# plt.legend(loc='best')
+# plt.show()
+
+class RNN(nn.Module):
+    def __init__(self):
+        super(RNN, self).__init__()
+        self.rnn = nn.RNN(
+            input_size=INPUT_SIZE,
+            hidden_size=32,
+            num_layers=1,
+            batch_first=True
+        )
+        self.out = nn.Linear(32, 1)
+
+    def forward(self, x, h_state):
+        # x (batch, time_step, input_size)
+        # h_state (n_layers, batch ,hidden_size)
+        # r_out (batch, time_step, hidden_size)
+        r_out, h_state = self.rnn(x, h_state)
+        r_out = r_out.reshape(-1,32)
+        outs = self.out(r_out)
+        return outs, h_state
 
 
-# 定义模型
-class lstm_reg(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size=1, num_layers=2):
-        super(lstm_reg, self).__init__()
-
-        self.rnn = nn.LSTM(input_size, hidden_size, num_layers)  # rnn
-        self.reg = nn.Linear(hidden_size, output_size)  # 回归
-
-    def forward(self, x):
-        x, _ = self.rnn(x)  # (seq, batch, hidden)
-        s, b, h = x.shape
-        x = x.view(s * b, h)  # 转换成线性层的输入格式
-        x = self.reg(x)
-        x = x.view(s, b, -1)
-        return x
-
-
-net = lstm_reg(3, 20)
-
+rnn = RNN()
+optimizer = torch.optim.Adam(rnn.parameters())
 criterion = nn.MSELoss()
-optimizer = torch.optim.Adam(net.parameters(), lr=1e-2)
-# 开始训练
-for e in range(1000):
-    var_x = Variable(train_x)
-    var_y = Variable(train_y)
-    # 前向传播
-    out = net(var_x)
-    loss = criterion(out, var_y)
-    # 反向传播
-    optimizer.zero_grad()
+EPOCHS = 300
+h_state = None
+
+for step in range(EPOCHS):
+    start, end = step*np.pi, (step+1)*np.pi
+    steps = np.linspace(start, end, TIME_STEP, dtype=np.float32) # 均匀分成 TIME_STEP 份
+    # np.newaxis: 插入新维度
+    x_np = np.sin(steps)
+    y_np = np.cos(steps)
+    x = torch.from_numpy(x_np[np.newaxis, :, np.newaxis])
+    y = torch.from_numpy(y_np[:, np.newaxis])
+    outs, h_state = rnn(x, h_state)
+
+    h_state = h_state.detach()  # 这一步很重要 不计算梯度将隐藏层数值传递
+    rnn.zero_grad()
+    loss = criterion(outs, y)
     loss.backward()
     optimizer.step()
-    if (e + 1) % 100 == 0:  # 每 100 次输出结果
-        print('123')
-net = net.eval()  # 转换成测试模式
-data_X = data_X.reshape(-1, 1, 3)
-data_X = torch.from_numpy(data_X)
-var_data = Variable(data_X)
-pred_test = net(var_data)  # 测试集的预测结果
-# 改变输出的格式
-pred_test = pred_test.view(-1).data.numpy()
-# 画出实际结果和预测的结果
-plt.plot(pred_test, 'r', label='prediction')
-plt.plot(dataset[2:], 'b', label='real')
-plt.legend(loc='best')
+    if step % 10 == 0:
+        # a.flatten()：a是个数组，a.flatten()
+        # 就是把a降到一维，默认是按行的方向降 。
+        # a.flatten().A：a是个矩阵，降维后还是个矩阵，矩阵.A（等效于矩阵.getA()）变成了数组
+        plt.plot(steps, y_np.flatten(), 'r-', label='cos')
+        plt.plot(steps, outs.data.numpy().flatten(), 'b-', label='predict')
+        plt.legend(loc='best')
+        plt.draw()
+        plt.pause(1)
+        plt.clf()
+        # clf()  # 清图
+        # cla()  # 清坐标轴
+        # close()  # 关窗口
