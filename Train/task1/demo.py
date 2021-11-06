@@ -44,8 +44,8 @@ class Net(nn.Module):
         self.fc3 = nn.Linear(32, 5)
 
     def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
+        x = self.fc1(x)
+        x = self.fc2(x)
         x = F.relu(self.fc3(x))
         return x
 
@@ -54,7 +54,7 @@ def train():
     input_size = len(word_bag)
     net = Net(input_size)
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(net.parameters(), lr=0.2)
+    optimizer = optim.Adam(net.parameters())
     size = len(train_data)
     for e in range(epoch):
         ls = 0.0
@@ -65,7 +65,7 @@ def train():
             net.zero_grad()
             # print(output.shape)
             # print(label.shape)
-            ans = torch.sum(torch.tensor([max(x) for x in output]) == label)
+            ans = torch.sum(torch.tensor([torch.max(x, -1)[1] for x in output]) == label)
             # print(ans)
             ac += ans
             loss = criterion(output, label)
@@ -73,7 +73,8 @@ def train():
             optimizer.step()
             ls += loss
         print('epoch :', e, ' loss = ', ls / size, 'ac = ', ac / size / 128)
+    # 保存模型
+    torch.save(net.state_dict(), 'task_1.pt')
 
 
-train()
-# torch.save(net.state_dict(), 'task_1.pt')
+# train()

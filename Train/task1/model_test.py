@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-#
 
 # ---------------------------------------------
-# Name:         test_model
+# Name:         model_test
 # Description:  
 # Author:       Laity
-# Date:         2021/11/4
+# Date:         2021/11/5
 # ---------------------------------------------
 from sklearn.feature_extraction.text import CountVectorizer
 from torch.utils.data import TensorDataset, DataLoader
@@ -14,39 +14,41 @@ import numpy as np
 import demo
 import torch.nn
 # 读取数据
-train = pd.read_csv(r'E:/DESKTOP/Github/DATA/TRAIN_1/train.tsv', sep='\t')
-labels = np.array(train['Sentiment'])
-
+train = pd.read_csv(r'E:/DESKTOP/Github/DATA/TRAIN_1/test.tsv', sep='\t')
+train_origin = pd.read_csv(r'E:/DESKTOP/Github/DATA/TRAIN_1/train.tsv', sep='\t')
 # 数据预处理
+
+phraseId = np.array(train['PhraseId'])
+size = len(train_origin['Phrase'])
+print(len(train_origin['Phrase']))
 ct = CountVectorizer(max_df=0.95, min_df=5, stop_words='english')
-vector = ct.fit_transform(train['Phrase'])
-one_hot = vector.toarray()
+vector = ct.fit_transform(train_origin['Phrase'].append(train['Phrase'])[size:])
 word_bag = ct.vocabulary_
+one_hot = vector.toarray()
 print('vector = ', len(one_hot))
 print('words = ', len(word_bag))
 
-train_set = TensorDataset(torch.FloatTensor(one_hot), torch.LongTensor(labels))
-train_data = DataLoader(train_set, shuffle=True, batch_size=128)
 
-net = demo.Net(len(word_bag))
+train_set = TensorDataset(torch.FloatTensor(one_hot), torch.LongTensor(phraseId))
+train_data = DataLoader(train_set, batch_size=128)
+
+print(len(train_data))
+
+
+net = demo.Net(14324)
 state = torch.load('task_1.pt')
 net.load_state_dict(state)
 
 print('test')
-# for i in train_data:
-#     x, y = i
-#     out = net(x)
-#     print(out)
-#     print(y)
-#     ac = torch.sum(torch.tensor([max(x) for x in out]) == y)
-#     print(ac)
-#     p = input()
-loss = torch.nn.CrossEntropyLoss()
+
+
+pre = []
 for data in train_data:
-    x, label = data
+    x, id = data
+    print(x.shape)
     output = net(x)
     # print(output.shape)
     # print(label.shape)
-    ac = torch.sum(torch.tensor([max(x) for x in output]) == label)
-    l = loss(output, label)
-    print('ac = ', ac, '/128', ' loss = ', l)
+    pre.append([id, output])
+    print(pre)
+    p = input()

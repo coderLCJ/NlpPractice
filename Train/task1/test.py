@@ -1,18 +1,10 @@
-# -*- coding: utf-8 -*-#
-
-# ---------------------------------------------
-# Name:         test
-# Description:  
-# Author:       Laity
-# Date:         2021/11/2
-# ---------------------------------------------
-
-import torch.nn.functional as F
-import torch
-import torch.nn
-
-
-out = torch.ones(128)
-pre = torch.zeros(128, 5)
-pre[0] = torch.tensor([0., 0., 2., 0., 0.])
-print(torch.sum(torch.tensor((torch.tensor([max(x) for x in pre]) == out))))
+import numpy as np
+import matplotlib.pyplot as plt
+def H3(x):
+    return np.where(x<0,0,(np.where(x<1,x,(np.where(x<2,2-x,0)))))
+x = np.linspace(-3,5,1000)
+y = H3(x)
+plt.title('Plotting hat func in this plot')
+plt.plot(x,y,'b-')
+plt.show()
+plt.savefig('picture/step4/fig4.png')
