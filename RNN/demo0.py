@@ -16,4 +16,3 @@ print(h0)
 output, hn = rnn(input, h0)
 
 print(output)
-print(hn)
