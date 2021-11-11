@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-#
 
 # ---------------------------------------------
-# Name:         demo
-# Description:
+# Name:         model_valid
+# Description:  
 # Author:       Laity
-# Date:         2021/11/4
+# Date:         2021/11/11
 # ---------------------------------------------
+import loadData
 import pandas as pd
 import unicodedata, re, string
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer, TfidfTransformer
@@ -17,40 +18,7 @@ import torch
 import torch.nn as nn
 from sklearn.linear_model import LogisticRegression
 from torch.utils.data import TensorDataset, DataLoader
-
-
-class Net(nn.Module):
-    def __init__(self, input_size):
-        super(Net, self).__init__()
-        self.fc1 = nn.Linear(input_size, 128)
-        self.fc2 = nn.Linear(128, 32)
-        self.fc3 = nn.Linear(32, 5)
-
-    def forward(self, x):
-        x = self.fc1(x)
-        x = self.fc2(x)
-        x = F.relu(self.fc3(x))
-        return x
-
-class rnnNet(nn.Module):
-    def __init__(self, word_bag_size):
-        super().__init__()
-        # hidden_size = 28,  ac =
-        # hidden_size = 256, ac =
-        self.em = nn.Embedding(word_bag_size, 128)
-        # input: (batch_size, 28, hidden)
-        self.rnn = nn.RNN(28 * 128, 64, batch_first=True, num_layers=2)
-        self.fc1 = nn.Linear(64, 32)
-        self.fc2 = nn.Linear(32, 5)
-
-    def forward(self, x):
-        x = self.em(x)
-        x = x.reshape(256, 1, -1)
-        x, _ = self.rnn(x)
-        x = self.fc1(x)
-        x = F.relu(self.fc2(x))
-        x = x.reshape(256, -1)
-        return x
+import NetModel
 
 print('begin')
 if __name__ == '__main__':
@@ -82,29 +50,27 @@ if __name__ == '__main__':
 
     input_size = train_vec.shape[1]
     state = torch.load('../task2/task_1.pt')
-    net = rnnNet(bag_size)
+    net = NetModel.RNN(bag_size)
     net.load_state_dict(state)
 
     def valid(size):
         ls = 0.0
         ac = 0.0
+        s = 0
         for data in train_data:
             x, label = data
             output = net(x)
-            print(output)
-            print(label)
             ans = torch.sum(torch.tensor([torch.max(x, -1)[1] for x in output]) == label)
             ac += ans
+            s += 1
 
-        print('验证集正确率 = ', ac / size)
+        print('验证集正确率 = %d/%d' % (ac, s*256))
 
 
     start = 153600
     end = 156060
-    train_set = TensorDataset(torch.LongTensor(train_one_hot[start:end]), torch.LongTensor(labels[start:end]))
-    train_data = DataLoader(train_set, shuffle=True, batch_size=256)
-    print(len(train_set))
-    valid(len(train_set))
+    train_data = loadData.data_loader(start, end)
+    valid(len(train_data))
     # exit()
 
 
