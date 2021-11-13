@@ -41,7 +41,7 @@ if __name__ == '__main__':
     # print(train_vec.shape)
     # print(test_vec.shape)
 
-    state = torch.load('../task2/task_1.pt')
+    state = torch.load('../task2/task_2.pt')
     net = NetModel.RNN(bag_size)
     net.load_state_dict(state)
 
@@ -54,4 +54,4 @@ if __name__ == '__main__':
 
     print(len(pre))
     loadData.test_data['Sentiment'] = pre
-    loadData.test_data[['PhraseId', 'Sentiment']].set_index('PhraseId').to_csv('test_pre2.csv')
+    loadData.test_data[['PhraseId', 'Sentiment']].set_index('PhraseId').to_csv('test_pre3.csv')

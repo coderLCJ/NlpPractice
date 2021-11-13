@@ -21,7 +21,6 @@ train = pd.read_csv(r'E:/DESKTOP/Github/DATA/TRAIN_1/train.tsv', sep='\t')
 ct = CountVectorizer(max_df=0.95, min_df=5, stop_words='english')
 vector = ct.fit(pd.concat([train['Phrase'], test['Phrase']]))
 
-
 input_size = 16790
 net = model_train.Net(input_size)
 state = torch.load('task_1_.pt')
