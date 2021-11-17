@@ -19,26 +19,31 @@ from sklearn.linear_model import LogisticRegression
 from torch.utils.data import TensorDataset, DataLoader
 import NetModel
 import loadData
-import Animator
+
+if torch.cuda.is_available():
+    device = torch.device('cuda')
+else:
+    device = torch.device('cpu')
 
 def valid(s, e, net):
-
     data_loader = loadData.data_loader(s, e)
     ac = 0
     for x, y in data_loader:
+        x = x.to(device)
+        y = y.to(device)
         p = net(x)
-        ac += sum((torch.max(p, -1)[1] == y).numpy())
+        ac += sum((torch.max(p.cpu(), -1)[1] == y.cpu()).numpy())
     print('ac: %d' % ac)
 
 def train():
     bag_size = len(loadData.words_bag)
     train_data_size = loadData.train_data_size
-    net = NetModel.RNN(bag_size)
-    criterion = nn.CrossEntropyLoss()
+    net = NetModel.RNN(bag_size).to(device)
+    criterion = nn.CrossEntropyLoss().to(device)
     optimizer = optim.Adam(params=net.parameters())
 
 
-    for i in range(2):
+    for i in range(10):
         sep = 12800
         for begin in range(0, train_data_size, sep):
             if begin + sep > train_data_size:
@@ -50,27 +55,25 @@ def train():
 
             data_loader = loadData.data_loader(begin, begin+sep)
             t = 0
-            epoch = 80
-            animator = Animator.Animator(xlabel='epoch', xlim=[0, 80], ylim=[0, 2],
-                                         legend=['train loss', 'test acc'])
+            epoch = 160
             for e in range(epoch):
                 ac = 0
                 ls = 0
                 size = len(data_loader) * data_loader.batch_size
                 # print('data loader size = ', size)
                 for inputs, labels in data_loader:
+                    inputs = inputs.to(device)
+                    labels = labels.to(device)
                     outputs = net(inputs)
                     net.zero_grad()
                     loss = criterion(outputs, labels)
                     loss.backward()
                     optimizer.step()
                     ls += loss
-                    ac += sum((torch.max(outputs, -1)[1] == labels).numpy())
+                    ac += sum((torch.max(outputs.cpu(), -1)[1] == labels.cpu()).numpy())
                     # print(ac)
-                animator.add(t, (ls/size*data_loader.batch_size, ac/size))
                 t += 1
-                # print('epoch: %d  loss: %f  ac: %f' % (e, ls/size*data_loader.batch_size, ac/size))
-            animator.close()
+                print('epoch: %d  loss: %f  ac: %f' % (e, ls/size*data_loader.batch_size, ac/size))
         torch.save(net.state_dict(), 'task_2.pt')
 
 

@@ -20,12 +20,18 @@ from sklearn.linear_model import LogisticRegression
 from torch.utils.data import TensorDataset, DataLoader
 import NetModel
 
+
+if torch.cuda.is_available():
+    device = torch.device('cuda')
+else:
+    device = torch.device('cpu')
+
 print('begin')
 if __name__ == '__main__':
     # 读取数据
-    train = pd.read_csv(r'E:/DESKTOP/Github/DATA/TRAIN_1/train.tsv', sep='\t')
+    train = pd.read_csv(r'../../../DATA/TRAIN_1/train.tsv', sep='\t')
     labels = np.array(train['Sentiment'])
-    test = pd.read_csv(r'E:/DESKTOP/Github/DATA/TRAIN_1/test.tsv', sep='\t')
+    test = pd.read_csv(r'../../../DATA/TRAIN_1/test.tsv', sep='\t')
     print(train.shape)
     print(test.shape)
     train_size = train.shape[0]
@@ -50,7 +56,7 @@ if __name__ == '__main__':
 
     input_size = train_vec.shape[1]
     state = torch.load('../task2/task_1.pt')
-    net = NetModel.RNN(bag_size)
+    net = NetModel.RNN(bag_size).to(device)
     net.load_state_dict(state)
 
     def valid(size):
@@ -59,8 +65,9 @@ if __name__ == '__main__':
         s = 0
         for data in train_data:
             x, label = data
+            x = x.to(device)
             output = net(x)
-            ans = torch.sum(torch.tensor([torch.max(x, -1)[1] for x in output]) == label)
+            ans = torch.sum(torch.tensor([torch.max(x, -1)[1] for x in output.cpu()]) == label)
             ac += ans
             s += 1
 

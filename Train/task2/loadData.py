@@ -13,8 +13,8 @@ import numpy as np
 from torch.utils.data import DataLoader, TensorDataset
 
 
-train_data = pd.read_csv('E:/DESKTOP/Github/DATA/TRAIN_1/train.tsv', sep='\t')
-test_data = pd.read_csv('E:/DESKTOP/Github/DATA/TRAIN_1/test.tsv', sep='\t')
+train_data = pd.read_csv('../../../DATA/TRAIN_1/train.tsv', sep='\t')
+test_data = pd.read_csv('../../../DATA/TRAIN_1/test.tsv', sep='\t')
 
 ct = CountVectorizer(stop_words='english')
 vector = ct.fit(pd.concat([train_data['Phrase'], test_data['Phrase']]))
@@ -48,7 +48,7 @@ def data_loader(begin, end):
     ret_loader = DataLoader(ret_set, batch_size=256, shuffle=True)
     return ret_loader
 
-def test_data_loader():
+def t_data_loader():
     ret_vec = []
     for corp in test_data['Phrase']:
         # print(corp)

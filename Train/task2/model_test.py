@@ -21,12 +21,17 @@ from torch.utils.data import TensorDataset, DataLoader
 import NetModel
 from tqdm import tqdm
 
+if torch.cuda.is_available():
+    device = torch.device('cuda')
+else:
+    device = torch.device('cpu')
+
 print('begin')
 if __name__ == '__main__':
     # 读取数据
-    train = pd.read_csv(r'E:/DESKTOP/Github/DATA/TRAIN_1/train.tsv', sep='\t')
+    train = pd.read_csv(r'../../../DATA/TRAIN_1/train.tsv', sep='\t')
     labels = np.array(train['Sentiment'])
-    test = pd.read_csv(r'E:/DESKTOP/Github/DATA/TRAIN_1/test.tsv', sep='\t')
+    test = pd.read_csv(r'../../../DATA/TRAIN_1/test.tsv', sep='\t')
     print(train.shape)
     print(test.shape)
     train_size = train.shape[0]
@@ -41,17 +46,18 @@ if __name__ == '__main__':
     # print(train_vec.shape)
     # print(test_vec.shape)
 
-    state = torch.load('../task2/task_2.pt')
-    net = NetModel.RNN(bag_size)
+    state = torch.load('task_1.pt')
+    net = NetModel.RNN(bag_size).to(device)
     net.load_state_dict(state)
 
-    loader = loadData.test_data_loader()
+    loader = loadData.t_data_loader()
     pre = []
     for _, x in tqdm(enumerate(loader)):
-        y = net(torch.LongTensor(x))
+        x = torch.LongTensor(x).to(device)
+        y = net(x)
         ans = torch.max(y, -1)[1]
         pre.append(int(ans))
 
     print(len(pre))
     loadData.test_data['Sentiment'] = pre
-    loadData.test_data[['PhraseId', 'Sentiment']].set_index('PhraseId').to_csv('test_pre3.csv')
+    loadData.test_data[['PhraseId', 'Sentiment']].set_index('PhraseId').to_csv('test_pre4.csv')

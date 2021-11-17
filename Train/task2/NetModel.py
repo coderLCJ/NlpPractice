@@ -28,7 +28,7 @@ class RNN(nn.Module):
         x, _ = self.rnn(x)
         x = self.fc1(F.relu(x))
         x = self.fc2(x)
-        x = self.fc3(x)
+        x = self.fc3(F.relu(x))
         x = x.reshape(-1, 5)
         return x
 
