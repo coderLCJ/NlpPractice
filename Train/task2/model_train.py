@@ -38,7 +38,7 @@ def valid(s, e, net):
 def train():
     bag_size = len(loadData.words_bag)
     train_data_size = loadData.train_data_size
-    net = NetModel.RNN(bag_size).to(device)
+    net = NetModel.CNN(bag_size).to(device)
     criterion = nn.CrossEntropyLoss().to(device)
     optimizer = optim.Adam(params=net.parameters())
 
