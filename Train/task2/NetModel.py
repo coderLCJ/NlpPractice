@@ -33,6 +33,33 @@ class RNN(nn.Module):
         x = x.reshape(-1, 5)
         return x
 
+#正确写法
+class TextCnn(nn.Module):
+    def __init__(self, word_bag_size):
+        super().__init__()
+        self.em_size = 256
+        self.em = nn.Embedding(word_bag_size, self.em_size)
+        self.conv = nn.Sequential(
+            # 256 * 256 * 28
+            nn.Conv1d(in_channels=self.em_size, out_channels=100, kernel_size=(5,)),
+            # 256 * 100 * 24
+            nn.ReLU(),
+            nn.MaxPool1d(kernel_size=24)
+            # 256 * 100 * 1
+        )
+        self.fc1 = nn.Linear(100, 32)
+        self.fc2 = nn.Linear(32, 5)
+
+    def forward(self, x):
+        x = self.em(x)
+        # Conv1d在列上做卷积 故要将维度交换 使列为词向量
+        x = x.permute(0, 2, 1)
+        x = self.conv(x)
+        x = x.reshape(256, -1)
+        x = self.fc2(self.fc1(x))
+        return x
+
+# 错误TextCnn
 class CNN(nn.Module):
     def __init__(self, word_bag_size):
         super().__init__()
