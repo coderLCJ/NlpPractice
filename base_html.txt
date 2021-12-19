@@ -1,0 +1,522 @@
+<!DOCTYPE html>   
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>花卉大全|花的图片 - 最全的花的图片及名称大全及花卉图片 - 花卉网</title>
+<meta content="花卉,花的图片,花卉大全,花卉图片及名称大全,花卉图片大全,花卉养殖方法大全,花卉种植方法大全" name="keywords" />
+<meta content="花卉网花卉大全频道，为广大的花友花痴们提供完善的花卉大全及花的图片，为花友们收集整理花卉图片及名称大全及花的图片，包括：花的图片、花卉图片大全、室内花卉图片大全、盆景花卉图片大全、园艺花卉大全、多肉植物花卉图片大全、花卉养殖方法大全、花卉种植方法大全、花卉知识大全、花卉栽培技术大全、绿色植物养护大全、花卉栽培技术大全等各类花卉信息。这里是花儿成长的地方，它们多姿多彩各有特色，每一种花卉都有它独特的美，它们让生活变成绿色！" name="description" />
+<meta name="baidu_union_verify" content="fbb64f6975954218843adbd5f597779d">
+
+<link href="http://static.huashichang.com/image/favicon.ico?v=201812211030" type="image/x-icon" rel="shortcut icon" />
+<link href="http://static.huashichang.com/css/css.php?t=css&f=global.css,main.css,module.css,menu.css,form.css,lists.css&v=201812211030now.css" rel="stylesheet" type="text/css" />
+<script>
+var SITE_URL  = 'http://www.aihuhua.com';var UPLOAD_URL= '/data/upload';var THEME_URL = 'http://static.huashichang.com';var APPNAME   = 'flowers';var MID='0';var UID= '0';var initNums= '140';var SYS_VERSION = '201812211030';var LANG = new Array();
+</script>
+<script src="http://www.aihuhua.com/data/lang/public_zh-cn.js?v=201812211030"></script><script src="http://static.huashichang.com/js/js.php?t=js&f=jquery-1.7.1.min.js,jquery.form.js,common.js,core.js,module.js,module.common.js,jwidget_1.0.0.js,jquery.atwho.js,jquery.caret.js,ui.core.js,ui.draggable.js,jquery-lazyload.js,plugins/core.comment.js&v=201812211030.js"></script>
+<!--{1:Addons::hook('public_head',array('uid'=>$uid))}-->
+<script>(function(){var el=document.createElement("script");el.src="https://sf1-scmcdn-tos.pstatp.com/goofy/ttzz/push.js?b570ae7bf74e0ef982b5ce814363681fd8265c8f76ce040be513e446bc2ceb5c1f1f54afcfed6205030d93b0adab24d4314ec81c6a74e28d5c7e4dfa1446a33b";el.id="ttzz";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(el,s)})(window);</script>
+</head>
+<body>
+<div class="header">
+	<!-- logo -->
+			<div class="logo" title="花卉网"><a title="花卉网(护花网)" href="http://www.aihuhua.com">花卉网</a></div>
+	
+	<!-- nav -->
+	<ul class="nav">	
+						<li  >
+							<a href="http://www.aihuhua.com" target="_self">首页</a>
+							</li>				<li  class="focus" >
+							<a href="http://www.aihuhua.com/hua/" target="_self">花卉</a>
+							</li>				<li  >
+							<a href="http://www.aihuhua.com/wenzhang/" target="_self">护花山庄</a>
+							</li>				<li  >
+							<a href="http://www.aihuhua.com/tupiandaquan/" target="_self">图库</a>
+							</li>				<li  >
+							<a href="http://www.aihuhua.com/riji/zuixin/" target="_self">日记</a>
+							</li>	</ul>
+
+	<!-- search -->
+	<div class="search">
+		<input type="text" class="input" id="search_input" autocomplete="off" lang="zh-CN" onblur="if(!this.value){this.value='搜索花名、帖子、用户';}" onfocus="if(this.value=='搜索花名、帖子、用户'){this.value='';}" onkeypress="if(getLength($('#search_input').val()) && $('#search_input').val()!=='搜索花名、帖子、用户' && event.keyCode==13){ $('#search_submit').click(); }" value="搜索花名、帖子、用户" />
+		<input type="button" class="submit" id="search_submit" value="" onclick="if(getLength($('#search_input').val()) && $('#search_input').val()!=='搜索花名、帖子、用户'){ document.location.href = '/so/hua-'+$('#search_input').val()+'/'; return false; }else{ $('#search_input').focus(); }" />
+	</div>
+
+	<!-- publish -->
+	<div class="publish">
+		<a class="add" href="http://www.aihuhua.com/riji/tianjia.html" title="发布养花日记" href="http://www.aihuhua.com/riji/tianjia.html">发布</a>
+	</div>
+
+	<!-- login -->
+		<div class="login">
+			<a title="登录花卉网" rel="nofollow" href="javascript:quickLogin();">登录</a>
+			<a title="注册花卉网用户" rel="nofollow" target="_blank" href="http://www.aihuhua.com/register/">注册</a>
+		</div>
+</div>
+<div class="main">
+
+	<!-- cateheads -->
+	<div class="cateheads">
+		<a href="/hua/" class="a on" title="花卉大全">花卉大全</a>
+		<a href="http://www.aihuhua.com/baike/" class="a" title="花卉类别">花卉类别</a>
+
+		<a href="http://www.aihuhua.com/baike/duorouduojiang/" class="a" title="多肉植物名称图片大全">多肉植物</a>
+		<a href="http://www.aihuhua.com/baike/lan/" class="a" title="兰花品种名称大全">兰花品种</a>
+	</div>
+
+	<!-- catelists -->
+	<div class="catelists">
+		<ul class="leibie">
+			<h2 class="title " title="花卉类别">花卉类别</h2>
+			<li><a href="/hua/quwei/" class="a " title="趣味类花卉" target="_self">趣味类</a></li><li><a href="/hua/fangxiang/" class="a " title="芳香类花卉" target="_self">芳香类</a></li><li><a href="/hua/guanguo/" class="a " title="观果类花卉" target="_self">观果类</a></li><li><a href="/hua/guanhua/" class="a " title="观花类花卉" target="_self">观花类</a></li><li><a href="/hua/guanye/" class="a " title="观叶类花卉" target="_self">观叶类</a></li><li><a href="/hua/guanjing/" class="a " title="观茎类花卉" target="_self">观茎类</a></li><li><a href="/hua/jieqing/" class="a " title="节庆类花卉" target="_self">节庆类</a></li><li><a href="/hua/chuidiao/" class="a " title="垂吊类花卉" target="_self">垂吊类</a></li><li><a href="/hua/guoshu/" class="a " title="果蔬类花卉" target="_self">果蔬类</a></li><li><a href="/hua/dibeicaoping/" class="a " title="地被草坪花卉" target="_self">地被草坪</a></li><li><a href="/hua/shuipei/" class="a " title="水培类花卉" target="_self">水培类</a></li><li><a href="/hua/penzai/" class="a " title="盆栽类花卉" target="_self">盆栽类</a></li>		</ul><ul class="gongneng">
+			<h2 class="title " title="花卉功能">花卉功能</h2>
+			<li><a href="/hua/guanshang/" class="a " title="观赏花卉" target="_self">观赏</a></li><li><a href="/hua/jinghuakongqi/" class="a " title="净化空气花卉" target="_self">净化空气</a></li><li><a href="/hua/xijiaquan/" class="a " title="吸甲醛花卉" target="_self">吸甲醛</a></li><li><a href="/hua/fangfushe/" class="a " title="防辐射花卉" target="_self">防辐射</a></li><li><a href="/hua/tishen/" class="a " title="提神花卉" target="_self">提神</a></li><li><a href="/hua/shajun/" class="a " title="杀菌花卉" target="_self">杀菌</a></li><li><a href="/hua/quwen/" class="a " title="驱蚊花卉" target="_self">驱蚊</a></li><li><a href="/hua/yaoyong/" class="a " title="药用花卉" target="_self">药用</a></li>		</ul><ul class="huanjing">
+			<h2 class="title " title="应用环境">应用环境</h2>
+			<li><a href="/hua/yangtai/" class="a " title="阳台花卉" target="_self">阳台</a></li><li><a href="/hua/chuangtai/" class="a " title="窗台花卉" target="_self">窗台</a></li><li><a href="/hua/tingyuan/" class="a " title="庭院花卉" target="_self">庭院</a></li><li><a href="/hua/louding/" class="a " title="楼顶花卉" target="_self">楼顶</a></li><li><a href="/hua/keting/" class="a " title="客厅花卉" target="_self">客厅</a></li><li><a href="/hua/canting/" class="a " title="餐厅花卉" target="_self">餐厅</a></li><li><a href="/hua/chaji/" class="a " title="茶几花卉" target="_self">茶几</a></li><li><a href="/hua/chufang/" class="a " title="厨房花卉" target="_self">厨房</a></li><li><a href="/hua/bangongshi/" class="a " title="办公室花卉" target="_self">办公室</a></li><li><a href="/hua/bangongzhuo/" class="a " title="办公桌花卉" target="_self">办公桌</a></li><li><a href="/hua/shufang/" class="a " title="书房花卉" target="_self">书房</a></li><li><a href="/hua/woshi/" class="a " title="卧室花卉" target="_self">卧室</a></li><li><a href="/hua/weishengjian/" class="a " title="卫生间花卉" target="_self">卫生间</a></li><li><a href="/hua/yuanlin/" class="a " title="园林花卉" target="_self">园林</a></li>		</ul><ul class="huaqi">
+			<h2 class="title " title="盛花期 / 习性">盛花期 / 习性</h2>
+			<li><a href="/hua/chunji/" class="a " title="春季花卉" target="_self">春季</a></li><li><a href="/hua/xiaji/" class="a " title="夏季花卉" target="_self">夏季</a></li><li><a href="/hua/qiuji/" class="a " title="秋季花卉" target="_self">秋季</a></li><li><a href="/hua/dongji/" class="a " title="冬季花卉" target="_self">冬季</a></li><li><a href="/hua/siji/" class="a " title="四季花卉" target="_self">四季</a></li><li><a href="/hua/bukaihua/" class="a " title="不开花花卉" target="_self">不开花</a></li><li><a href="/hua/xiyang/" class="a " title="喜阳花卉" target="_self">喜阳</a></li><li><a href="/hua/xiyin/" class="a " title="喜阴花卉" target="_self">喜阴</a></li>		</ul><ul class="nandu">
+			<h2 class="title " title="养护难度">养护难度</h2>
+			<li><a href="/hua/rongyi/" class="a " title="容易养殖花卉" target="_self">容易养殖</a></li><li><a href="/hua/liuxin/" class="a " title="留心养殖花卉" target="_self">留心养殖</a></li><li><a href="/hua/jingxin/" class="a " title="精心养护花卉" target="_self">精心养护</a></li><li><a href="/hua/zhuanye/" class="a " title="专业养护花卉" target="_self">专业养护</a></li>		</ul>	</div>
+
+	<!-- tagtips -->
+			<div id="PromptTips" class="tagtips">
+			<h1 class="title" title="花卉网花卉大全">花卉大全</h1>
+			<i title="花卉大全图片及名称" class="ico">花卉大全图片及名称</i>
+			<div class="cont shadow">
+				<strong>花卉大全</strong><br /><br />
+				通俗地讲，“花”是植物的繁殖器官，是指姿态优美、色彩鲜艳、气味香馥的观赏植物，“卉”是草的总称。习惯上往往把有观赏价值的灌木和可以盆栽的小乔木包括在内，统称为“花卉”。<br />
+				花卉网为你收集花卉图片及名称大全，包括：花卉图片大全、花卉图片及名称、室内花卉图片大全、盆景花卉图片大全、多肉植物花卉图片大全、花卉知识大全、园艺花卉大全、阳台花卉大全、窗台花卉大全、客厅花卉大全、办公桌花卉大全、庭院花卉大全、卧室花卉大全、茶几花卉大全、书房花卉大全、能吸收室内毒气的花卉品种大全、及各类植物的种植知识、花卉养殖方法等各类花卉信息。<br /><br />
+				花开花又落，春去春又来，<br />
+				也许，你曾与那朵花相遇，可是你却叫不出它的名字；<br />
+				也许，你曾听到过一朵花的名字，可是你却想不起它的模样；<br />
+				也许，翘首，凝眸枝头的那一抹嫣红，花依然盛开，可是你却还在等待；<br />
+				也许，春的到来，只为种下一片花海，可是你却为不知花名而继续着无奈，舍不得离开；<br />
+				也许...<br />
+				还在想，那些年我们一起寻找的花卉图片及名称大全吗；<br />
+				还在想，你拍的花卉图片上那朵墙角独自开的花永不褪去的容颜吗；<br />
+				还在想，曾经去花卉园却因丝毫不懂绿色植物养护大全及各类植物的种植知识而对别人羡慕不已吗；<br />
+				还在想，三月，陌上花开，姹紫嫣红，双燕斜飞，绿竹萧疏，掩映着几树桃花。放眼望去，一片片嫩绿，一点点粉红，一簇簇灿黄，瞬间晕染成一幅水墨画卷。却不知花如何开，叶如何来吗；<br />
+				还在想...<br />
+				来花卉网吧，这里为你展现万千花卉图片、花卉名称大全、花卉养殖方法及花卉养护知识大全，让你感受又一个春的到来。<br /><br />
+				以下是花卉网为你提供的花卉内容大全和花卉图片大全，让你认识更多的趣味类花卉、芳香类花卉、观果类花卉、观花类花卉、观叶类花卉、节庆类花卉、水培类花卉等各类花卉信息。<br /><br />
+				花卉网是你学习花卉栽培大全和了解花卉图片及名称大全的好助手！！！
+			</div>
+		</div>
+
+	<!-- imglist -->
+	<ul class="imglist">
+
+		<li class="shadow">
+			<dl class="cate cate_top">
+				<dt><h2 title="最新花卉">最新花卉</h2></dt>
+				<dd>
+					<a href="http://www.aihuhua.com/huahui/lengshuihua.html" target="_blank" title="冷水花">冷水花</a><a href="http://www.aihuhua.com/huahui/lvluo.html" target="_blank" title="绿萝">绿萝</a><a href="http://www.aihuhua.com/huahui/fenyejueming.html" target="_blank" title="粉叶决明">粉叶决明</a><a href="http://www.aihuhua.com/huahui/qizimei.html" target="_blank" title="七姊妹">七姊妹</a><a href="http://www.aihuhua.com/huahui/tengbenyueji.html" target="_blank" title="藤本月季">藤本月季</a><a href="http://www.aihuhua.com/huahui/shanhuhuafengli.html" target="_blank" title="珊瑚花凤梨">珊瑚花凤梨</a><a href="http://www.aihuhua.com/huahui/huangyangshu.html" target="_blank" title="黄杨树">黄杨树</a><a href="http://www.aihuhua.com/huahui/ganlan.html" target="_blank" title="橄榄">橄榄</a><a href="http://www.aihuhua.com/huahui/bingjiao.html" target="_blank" title="冰娇">冰娇</a><a href="http://www.aihuhua.com/huahui/mangjishi.html" target="_blank" title="莽吉柿">莽吉柿</a><a href="http://www.aihuhua.com/huahui/hamigua.html" target="_blank" title="哈密瓜">哈密瓜</a><a href="http://www.aihuhua.com/huahui/xianggua.html" target="_blank" title="香瓜">香瓜</a><a href="http://www.aihuhua.com/huahui/binlang.html" target="_blank" title="槟榔">槟榔</a><a href="http://www.aihuhua.com/huahui/liulian.html" target="_blank" title="榴莲">榴莲</a><a href="http://www.aihuhua.com/huahui/lizhi.html" target="_blank" title="荔枝">荔枝</a><a href="http://www.aihuhua.com/huahui/zitan.html" target="_blank" title="紫檀">紫檀</a><a href="http://www.aihuhua.com/huahui/xuelianguo.html" target="_blank" title="雪莲果">雪莲果</a><a href="http://www.aihuhua.com/huahui/xiyangdujuan.html" target="_blank" title="西洋杜鹃">西洋杜鹃</a><a href="http://www.aihuhua.com/huahui/heifanqie.html" target="_blank" title="黑番茄">黑番茄</a><a href="http://www.aihuhua.com/huahui/laiputao.html" target="_blank" title="癞葡萄">癞葡萄</a>				</dd>
+			</dl>
+			<dl class="cate">
+				<dt><h2 title="热门花卉排行榜">热门花卉排行榜</h2></dt>
+				<dd>
+					<a href="http://www.aihuhua.com/huahui/pugongying.html" target="_blank" title="蒲公英">蒲公英</a><a href="http://www.aihuhua.com/huahui/gouqi.html" target="_blank" title="枸杞">枸杞</a><a href="http://www.aihuhua.com/huahui/baixiangguo.html" target="_blank" title="百香果">百香果</a><a href="http://www.aihuhua.com/huahui/zhuzi.html" target="_blank" title="竹子">竹子</a><a href="http://www.aihuhua.com/huahui/xinanrendong.html" target="_blank" title="西南忍冬">西南忍冬</a><a href="http://www.aihuhua.com/huahui/muhua.html" target="_blank" title="木槿花">木槿花</a><a href="http://www.aihuhua.com/huahui/tanhua.html" target="_blank" title="昙花">昙花</a><a href="http://www.aihuhua.com/huahui/yimucao.html" target="_blank" title="益母草">益母草</a><a href="http://www.aihuhua.com/huahui/canghonghua.html" target="_blank" title="藏红花">藏红花</a><a href="http://www.aihuhua.com/huahui/tongqiancao.html" target="_blank" title="铜钱草">铜钱草</a><a href="http://www.aihuhua.com/huahui/huangqi.html" target="_blank" title="黄芪">黄芪</a><a href="http://www.aihuhua.com/huahui/facaishu.html" target="_blank" title="发财树">发财树</a><a href="http://www.aihuhua.com/huahui/yaoqianshu.html" target="_blank" title="摇钱树">摇钱树</a><a href="http://www.aihuhua.com/huahui/lianhuazhu.html" target="_blank" title="莲花竹">莲花竹</a><a href="http://www.aihuhua.com/huahui/danggui.html" target="_blank" title="当归">当归</a><a href="http://www.aihuhua.com/huahui/suhua.html" target="_blank" title="罂粟花">罂粟花</a><a href="http://www.aihuhua.com/huahui/hehua.html" target="_blank" title="荷花">荷花</a><a href="http://www.aihuhua.com/huahui/shandimeigui.html" target="_blank" title="山地玫瑰">山地玫瑰</a><a href="http://www.aihuhua.com/huahui/shiliu.html" target="_blank" title="石榴">石榴</a><a href="http://www.aihuhua.com/huahui/boluomi.html" target="_blank" title="菠萝蜜">菠萝蜜</a>				</dd>
+			</dl>
+		</li>
+
+		<li class="shadow" style="height:232px">
+			<div class="image">
+			  				<a class="img" target="_blank" title="黄金藤" href="http://www.aihuhua.com/huahui/huangjinteng.html">				<img alt="黄金藤" title="黄金藤" width="190" height="142" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2020/0411/12/5e9146ccdedbe_190_auto.jpeg" /></a>						
+				<span class="action"><font>22369人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="黄金藤" href="http://www.aihuhua.com/huahui/huangjinteng.html">黄金藤</a>
+			<label class="label">别名：绿萝</label>
+			<p class="desc">绿萝是常绿藤本植物，原生长在热带地区。生命力顽强，遇水即...</p>
+		</li><li class="shadow" style="height:231px">
+			<div class="image">
+			  <a class="img" target="_blank" title="粉叶决明图片大全" href="http://www.aihuhua.com/tu/fenyejueming.html">
+			   				<img alt="粉叶决明" title="粉叶决明" width="190" height="141" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2020/0317/20/5e70c1d7be5a2_190_auto.jpg" /></a>						
+				<span class="action"><font>17018人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="粉叶决明" href="http://www.aihuhua.com/huahui/fenyejueming.html">粉叶决明</a>
+			<label class="label">别名：黄金梅,黄花决明,黄花刺,金药树,山扁豆,黄槐,树槐,豆槐</label>
+			<p class="desc">黄金梅是商业产品名，其实真正卖的应该是黄花决明。它是豆科...</p>
+		</li><li class="shadow" style="height:216px">
+			<div class="image">
+			  				<a class="img" target="_blank" title="胭脂云" href="http://www.aihuhua.com/huahui/yanzhiyun.html">				<img alt="胭脂云" title="胭脂云" width="190" height="126" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2020/0208/13/5e3e41f0c86fd_190_auto.jpg" /></a>						
+				<span class="action"><font>14521人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="胭脂云" href="http://www.aihuhua.com/huahui/yanzhiyun.html">胭脂云</a>
+			<label class="label">别名：</label>
+			<p class="desc">胭脂云，是景天科的一种植物。</p>
+		</li><li class="shadow" style="height:230px">
+			<div class="image">
+			  <a class="img" target="_blank" title="荷花蔷薇图片大全" href="http://www.aihuhua.com/tu/hehuaqiangwei.html">
+			   				<img alt="荷花蔷薇" title="荷花蔷薇" width="190" height="140" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0711/08/5d26844a8a31d_190_auto.jpg" /></a>						
+				<span class="action"><font>15615人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="荷花蔷薇" href="http://www.aihuhua.com/huahui/hehuaqiangwei.html">荷花蔷薇</a>
+			<label class="label">别名：</label>
+			<p class="desc">荷花蔷薇，落叶灌木，英文名是China Rose，高1—...</p>
+		</li><li class="shadow" style="height:232px">
+			<div class="image">
+			  <a class="img" target="_blank" title="唐松草图片大全" href="http://www.aihuhua.com/tu/tangsongcao.html">
+			   				<img alt="唐松草" title="唐松草" width="190" height="142" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0507/20/5cd17cddb1b23_190_auto.jpg" /></a>						
+				<span class="action"><font>14805人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="唐松草" href="http://www.aihuhua.com/huahui/tangsongcao.html">唐松草</a>
+			<label class="label">别名：草黄连,马尾连,黑汉子腿,紫花顿,土黄连</label>
+			<p class="desc">唐松草为多年生草本植物，生山坡或山沟林下阴湿处。根入药，...</p>
+		</li><li class="shadow" style="height:232px">
+			<div class="image">
+			  <a class="img" target="_blank" title="七姊妹图片大全" href="http://www.aihuhua.com/tu/qizimei.html">
+			   				<img alt="七姊妹" title="七姊妹" width="190" height="142" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0507/20/5cd17a3db59ef_190_auto.png" /></a>						
+				<span class="action"><font>31767人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="七姊妹" href="http://www.aihuhua.com/huahui/qizimei.html">七姊妹</a>
+			<label class="label">别名：十姐妹</label>
+			<p class="desc">七姊妹也称十姐妹，是蔷薇科蔷薇属多花蔷薇的一个变种。花重...</p>
+		</li><li class="shadow" style="height:232px">
+			<div class="image">
+			  				<a class="img" target="_blank" title="红花玉芙蓉" href="http://www.aihuhua.com/huahui/honghuayufurong.html">				<img alt="红花玉芙蓉" title="红花玉芙蓉" width="190" height="142" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0330/22/5c9f7bfd02f35_190_auto.jpg" /></a>						
+				<span class="action"><font>11998人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="红花玉芙蓉" href="http://www.aihuhua.com/huahui/honghuayufurong.html">红花玉芙蓉</a>
+			<label class="label">别名：</label>
+			<p class="desc">红花玉芙蓉 学名：Leucophylum frutesc...</p>
+		</li><li class="shadow" style="height:206px">
+			<div class="image">
+			  <a class="img" target="_blank" title="珊瑚花凤梨图片大全" href="http://www.aihuhua.com/tu/shanhuhuafengli.html">
+			   				<img alt="珊瑚花凤梨" title="珊瑚花凤梨" width="190" height="116" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0311/19/5c864c5346e5a_190_auto.jpg" /></a>						
+				<span class="action"><font>19835人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="珊瑚花凤梨" href="http://www.aihuhua.com/huahui/shanhuhuafengli.html">珊瑚花凤梨</a>
+			<label class="label">别名：莺歌凤梨,黄金玉扇,岐花鹦哥凤梨</label>
+			<p class="desc">莺歌凤梨别名岐花鹦哥凤梨、珊瑚花凤梨，株高20厘米左右。...</p>
+		</li><li class="shadow" style="height:226px">
+			<div class="image">
+			  <a class="img" target="_blank" title="冰娇图片大全" href="http://www.aihuhua.com/tu/bingjiao.html">
+			   				<img alt="冰娇" title="冰娇" width="190" height="136" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0302/21/5c7a8a418c054_190_auto.jpeg" /></a>						
+				<span class="action"><font>24600人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="冰娇" href="http://www.aihuhua.com/huahui/bingjiao.html">冰娇</a>
+			<label class="label">别名：</label>
+			<p class="desc">冰娇：是荷花的品种之一。多年生水生草本；根状茎横生，肥厚...</p>
+		</li><li class="shadow" style="height:222px">
+			<div class="image">
+			  <a class="img" target="_blank" title="橄榄图片大全" href="http://www.aihuhua.com/tu/ganlan.html">
+			   				<img alt="橄榄" title="橄榄" width="190" height="132" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0302/21/5c7a894fde13a_190_auto.jpg" /></a>						
+				<span class="action"><font>26150人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="橄榄" href="http://www.aihuhua.com/huahui/ganlan.html">橄榄</a>
+			<label class="label">别名：黄榄,青果,山榄,白榄,红榄,青子,谏果,忠果</label>
+			<p class="desc">橄榄橄榄橄榄科橄榄属乔木植物。高可达35米，胸径可达15...</p>
+		</li><li class="shadow" style="height:214px">
+			<div class="image">
+			  <a class="img" target="_blank" title="槟榔图片大全" href="http://www.aihuhua.com/tu/binlang.html">
+			   				<img alt="槟榔" title="槟榔" width="190" height="124" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0302/21/5c7a89bb7847c_190_auto.jpg" /></a>						
+				<span class="action"><font>41470人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="槟榔" href="http://www.aihuhua.com/huahui/binlang.html">槟榔</a>
+			<label class="label">别名：槟榔子,大腹子,宾门,橄榄子,青仔</label>
+			<p class="desc">槟榔是单子叶植物纲、初生目、棕榈科、槟榔属常绿乔木，茎直...</p>
+		</li><li class="shadow" style="height:238px">
+			<div class="image">
+			  <a class="img" target="_blank" title="香瓜图片大全" href="http://www.aihuhua.com/tu/xianggua.html">
+			   				<img alt="香瓜" title="香瓜" width="190" height="148" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0302/21/5c7a887c4bccc_190_auto.jpg" /></a>						
+				<span class="action"><font>39475人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="香瓜" href="http://www.aihuhua.com/huahui/xianggua.html">香瓜</a>
+			<label class="label">别名：甘瓜,甜瓜</label>
+			<p class="desc">香瓜，葫芦科植物的果实肉质，具多室及多种子，和浆果很像，...</p>
+		</li><li class="shadow" style="height:224px">
+			<div class="image">
+			  <a class="img" target="_blank" title="哈密瓜图片大全" href="http://www.aihuhua.com/tu/hamigua.html">
+			   				<img alt="哈密瓜" title="哈密瓜" width="190" height="134" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0302/21/5c7a88111b661_190_auto.png" /></a>						
+				<span class="action"><font>33599人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="哈密瓜" href="http://www.aihuhua.com/huahui/hamigua.html">哈密瓜</a>
+			<label class="label">别名：雪瓜</label>
+			<p class="desc">哈密瓜，新疆特产，中国国家地理标志产品。
+哈密瓜主产于...</p>
+		</li><li class="shadow" style="height:211px">
+			<div class="image">
+			  <a class="img" target="_blank" title="榴莲图片大全" href="http://www.aihuhua.com/tu/liulian.html">
+			   				<img alt="榴莲" title="榴莲" width="190" height="121" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0302/21/5c7a87878cc79_190_auto.jpg" /></a>						
+				<span class="action"><font>36333人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="榴莲" href="http://www.aihuhua.com/huahui/liulian.html">榴莲</a>
+			<label class="label">别名：</label>
+			<p class="desc">榴莲是一种锦葵目、木棉科巨型的热带常绿乔木，叶片长圆，顶...</p>
+		</li><li class="shadow" style="height:211px">
+			<div class="image">
+			  <a class="img" target="_blank" title="莽吉柿图片大全" href="http://www.aihuhua.com/tu/mangjishi.html">
+			   				<img alt="莽吉柿" title="莽吉柿" width="190" height="121" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0302/21/5c7a871e89910_190_auto.jpg" /></a>						
+				<span class="action"><font>21440人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="莽吉柿" href="http://www.aihuhua.com/huahui/mangjishi.html">莽吉柿</a>
+			<label class="label">别名：山竹,山竺,山竹子,倒捻子</label>
+			<p class="desc">莽吉柿俗称山竹，或山竺、山竹子、倒捻子。小乔木，高12-...</p>
+		</li><li class="shadow" style="height:206px">
+			<div class="image">
+			  <a class="img" target="_blank" title="樱桃图片大全" href="http://www.aihuhua.com/tu/yingtao.html">
+			   				<img alt="樱桃" title="樱桃" width="190" height="116" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0302/21/5c7a861d0a0ad_190_auto.jpg" /></a>						
+				<span class="action"><font>19811人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="樱桃" href="http://www.aihuhua.com/huahui/yingtao.html">樱桃</a>
+			<label class="label">别名：车厘子,莺桃,荆桃,楔桃,英桃,牛桃,樱珠,含桃,玛瑙</label>
+			<p class="desc">樱桃是某些李属类植物的统称，包括樱桃亚属、酸樱桃亚属、桂...</p>
+		</li><li class="shadow" style="height:211px">
+			<div class="image">
+			  <a class="img" target="_blank" title="香芋图片大全" href="http://www.aihuhua.com/tu/xiangyu.html">
+			   				<img alt="香芋" title="香芋" width="190" height="121" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0302/21/5c7a81ef02274_190_auto.jpg" /></a>						
+				<span class="action"><font>15314人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="香芋" href="http://www.aihuhua.com/huahui/xiangyu.html">香芋</a>
+			<label class="label">别名：地栗子,香参,土栾儿,黄栗芋</label>
+			<p class="desc">香芋又称地栗子、黄栗芋，泽泻目天南星科芋属，淡味、灰白色...</p>
+		</li><li class="shadow" style="height:201px">
+			<div class="image">
+			  <a class="img" target="_blank" title="豆薯图片大全" href="http://www.aihuhua.com/tu/doushu.html">
+			   				<img alt="豆薯" title="豆薯" width="190" height="111" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0302/20/5c7a7d5ca3f2b_190_auto.png" /></a>						
+				<span class="action"><font>18915人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="豆薯" href="http://www.aihuhua.com/huahui/doushu.html">豆薯</a>
+			<label class="label">别名：沙葛,地瓜,凉薯,番葛,葛薯</label>
+			<p class="desc">豆薯是豆科，豆薯属草质缠绕藤本植物，根块状，纺锤形或扁球...</p>
+		</li><li class="shadow" style="height:232px">
+			<div class="image">
+			  <a class="img" target="_blank" title="雪莲果图片大全" href="http://www.aihuhua.com/tu/xuelianguo.html">
+			   				<img alt="雪莲果" title="雪莲果" width="190" height="142" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0302/20/5c7a797e39f21_190_auto.jpg" /></a>						
+				<span class="action"><font>33373人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="雪莲果" href="http://www.aihuhua.com/huahui/xuelianguo.html">雪莲果</a>
+			<label class="label">别名：菊薯</label>
+			<p class="desc">雪莲果，菊薯的别称，在中国四川被称作“万根苕”，是一种菊...</p>
+		</li><li class="shadow" style="height:216px">
+			<div class="image">
+			  <a class="img" target="_blank" title="高山杜鹃图片大全" href="http://www.aihuhua.com/tu/gaoshandujuan.html">
+			   				<img alt="高山杜鹃" title="高山杜鹃" width="190" height="126" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0203/22/5c56fedad64f6_190_auto.jpg" /></a>						
+				<span class="action"><font>18665人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="高山杜鹃" href="http://www.aihuhua.com/huahui/gaoshandujuan.html">高山杜鹃</a>
+			<label class="label">别名：</label>
+			<p class="desc">高山杜鹃（学名：Rhododendron lapponi...</p>
+		</li><li class="shadow" style="height:280px">
+			<div class="image">
+			  <a class="img" target="_blank" title="黑番茄图片大全" href="http://www.aihuhua.com/tu/heifanqie.html">
+			   				<img alt="黑番茄" title="黑番茄" width="190" height="190" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0202/14/5c553655c1f12_190_auto.jpg" /></a>						
+				<span class="action"><font>10156人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="黑番茄" href="http://www.aihuhua.com/huahui/heifanqie.html">黑番茄</a>
+			<label class="label">别名：</label>
+			<p class="desc">黑番茄（Black Tomato）原产南美洲，是番茄家族...</p>
+		</li><li class="shadow" style="height:217px">
+			<div class="image">
+			  <a class="img" target="_blank" title="癞葡萄图片大全" href="http://www.aihuhua.com/tu/laiputao.html">
+			   				<img alt="癞葡萄" title="癞葡萄" width="190" height="127" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0202/14/5c55323f0b5be_190_auto.jpg" /></a>						
+				<span class="action"><font>17964人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="癞葡萄" href="http://www.aihuhua.com/huahui/laiputao.html">癞葡萄</a>
+			<label class="label">别名：金铃子,金粒子,金赖瓜,红娘瓜,离呲瓜</label>
+			<p class="desc">江南一带较常见，台州，温州一带称为\"红娘\"，顾名思义...</p>
+		</li><li class="shadow" style="height:216px">
+			<div class="image">
+			  <a class="img" target="_blank" title="番茄图片大全" href="http://www.aihuhua.com/tu/fanqie.html">
+			   				<img alt="番茄" title="番茄" width="190" height="126" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0202/13/5c552e1a80dcf_190_auto.jpg" /></a>						
+				<span class="action"><font>31612人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="番茄" href="http://www.aihuhua.com/huahui/fanqie.html">番茄</a>
+			<label class="label">别名：西红柿,番柿,六月柿,洋柿子,毛秀才,蕃柿</label>
+			<p class="desc">番茄，即西红柿，是管状花目、茄科、番茄属的一种一年生或多...</p>
+		</li><li class="shadow" style="height:234px">
+			<div class="image">
+			  <a class="img" target="_blank" title="黄金庆典图片大全" href="http://www.aihuhua.com/tu/jinseqingdian.html">
+			   				<img alt="黄金庆典" title="黄金庆典" width="190" height="144" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0112/17/5c39aca9d2731_190_auto.jpg" /></a>						
+				<span class="action"><font>17870人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="黄金庆典" href="http://www.aihuhua.com/huahui/jinseqingdian.html">黄金庆典</a>
+			<label class="label">别名：金色庆典</label>
+			<p class="desc">黄金庆典(Golden Celebration) ：19...</p>
+		</li><li class="shadow" style="height:215px">
+			<div class="image">
+			  <a class="img" target="_blank" title="老鸦柿图片大全" href="http://www.aihuhua.com/tu/laoyashi.html">
+			   				<img alt="老鸦柿" title="老鸦柿" width="190" height="125" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0110/19/5c3730c9a1ba5_190_auto.jpg" /></a>						
+				<span class="action"><font>13160人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="老鸦柿" href="http://www.aihuhua.com/huahui/laoyashi.html">老鸦柿</a>
+			<label class="label">别名：山柿子,野山柿,野柿子,丁香柿</label>
+			<p class="desc">老鸦柿（拉丁学名：Diospyros rhombifol...</p>
+		</li><li class="shadow" style="height:231px">
+			<div class="image">
+			  <a class="img" target="_blank" title="茴麻图片大全" href="http://www.aihuhua.com/tu/huima.html">
+			   				<img alt="茴麻" title="茴麻" width="190" height="141" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2019/0105/23/5c30cc00b5216_190_auto.jpg" /></a>						
+				<span class="action"><font>14899人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="茴麻" href="http://www.aihuhua.com/huahui/huima.html">茴麻</a>
+			<label class="label">别名：</label>
+			<p class="desc">苘麻 一年生亚灌木状草本，高达1-2m。茎枝被柔毛。叶互...</p>
+		</li><li class="shadow" style="height:219px">
+			<div class="image">
+			  				<a class="img" target="_blank" title="柳叶绣球菊" href="http://www.aihuhua.com/huahui/liuyexiuqiuju.html">				<img alt="柳叶绣球菊" title="柳叶绣球菊" width="190" height="129" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2018/1228/12/5c25a6d7cd62a_190_auto.png" /></a>						
+				<span class="action"><font>7392人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="柳叶绣球菊" href="http://www.aihuhua.com/huahui/liuyexiuqiuju.html">柳叶绣球菊</a>
+			<label class="label">别名：空心柳,王八脆,水火筒,马尿溲</label>
+			<p class="desc">柳叶绣球菊（拉丁名：Spiraea salicifoli...</p>
+		</li><li class="shadow" style="height:216px">
+			<div class="image">
+			  <a class="img" target="_blank" title="荷花玉兰图片大全" href="http://www.aihuhua.com/tu/hehuayulan.html">
+			   				<img alt="荷花玉兰" title="荷花玉兰" width="190" height="126" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2018/1224/11/5c204c3a524ab_190_auto.jpg" /></a>						
+				<span class="action"><font>16678人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="荷花玉兰" href="http://www.aihuhua.com/huahui/hehuayulan.html">荷花玉兰</a>
+			<label class="label">别名：木莲花,泽玉兰,洋玉兰,广玉兰</label>
+			<p class="desc">荷花玉兰（学名：Magnolia grandiflora...</p>
+		</li><li class="shadow" style="height:207px">
+			<div class="image">
+			  <a class="img" target="_blank" title="红花木莲图片大全" href="http://www.aihuhua.com/tu/honghuamulian.html">
+			   				<img alt="红花木莲" title="红花木莲" width="190" height="117" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2018/1224/10/5c2049a4e07a6_190_auto.jpg" /></a>						
+				<span class="action"><font>14192人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="红花木莲" href="http://www.aihuhua.com/huahui/honghuamulian.html">红花木莲</a>
+			<label class="label">别名：红色木莲,莲花,细花木莲,厚朴,土厚朴,小叶子厚朴</label>
+			<p class="desc">红花木莲（学名：Manglietia insignis）...</p>
+		</li><li class="shadow" style="height:232px">
+			<div class="image">
+			  <a class="img" target="_blank" title="罗布麻图片大全" href="http://www.aihuhua.com/tu/luobuma.html">
+			   				<img alt="罗布麻" title="罗布麻" width="190" height="142" class="lazy" src="http://static.huashichang.com/image/grey.gif"  data-original="http://pic1.huashichang.com/2018/1224/10/5c20463a71002_190_auto.jpg" /></a>						
+				<span class="action"><font>16987人气</font><i></i></span>
+			</div>
+			<a class="title" target="_blank" title="罗布麻" href="http://www.aihuhua.com/huahui/luobuma.html">罗布麻</a>
+			<label class="label">别名：红麻,茶叶花,红柳子,羊肚拉角</label>
+			<p class="desc">罗布麻（学名：A. venetum L.），别称红麻、茶...</p>
+		</li>
+	</ul>
+
+	<!-- pagination -->
+	<div class="pagination"> <a class='current' rel='nofollow'>1</a><a href='/hua/page-2.html'>2</a><a href='/hua/page-3.html'>3</a><a href='/hua/page-4.html'>4</a><a href='/hua/page-5.html'>5</a><a href='/hua/page-81.html' >..81</a><a href='/hua/page-2.html' class='next'>下一页</a></div>
+
+</div>
+
+<script src="http://static.huashichang.com/js/jquery.masonry.min.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript">
+$(function() {
+	//瀑布流
+	var $container = $('.imglist');
+	$container.masonry({ itemSelector:'.shadow'});
+	//人气
+	$('.imglist li').hover( function(){ $(this).find('span.action').stop().animate({'bottom':0}, 300); }, function(){ $(this).find('span.action').stop().animate({'bottom':'-30px'}, 300); });
+	//提示
+	$("#PromptTips i.ico").hover(function(){
+		$("#PromptTips div.cont").show();
+		clearTimeout(PromptTipsTimes);
+	}, function(){
+		PromptTipsTimes = setTimeout(function(){ $("#PromptTips div.cont").hide(); }, 200);
+	});
+	$("#PromptTips div.cont").hover(function(){
+		clearTimeout(PromptTipsTimes);
+		$(this).show();
+	}, function(){
+		$(this).hide();
+	});
+	$("img.lazy").lazyload({ failurelimit : 10, effect : "fadeIn" });
+});
+</script>
+<!--Baidu--><div style="top:441px;left:50%;margin-left:242px;padding-left:6px;position:fixed;background-color:#F4F0EC;" id="bdshare"></div><!--Baidu-->
+
+<div class="footer_space">
+<script type="text/javascript">
+  /*底部广告*/
+  var cpro_id = "u2404341";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+
+
+<!-- navigation -->
+<div class="navigation">
+	<div class="cont">
+		<div class="cate caterec">
+			<a href="javascript:void(0);" title="花卉网快捷导航" rel="nofollow" class="title">快捷<em class="ico"></em></a>
+			<ul class="catelist">
+			<li><a href="http://www.aihuhua.com/riji/" rel="nofollow">
+					<i><img src="http://www.aihuhua.com/apps/blog/Appinfo/icon_app.png" width="16" height="16" />养花日记</i>
+				</a></li><li><a href="http://www.aihuhua.com/zhuti/home" rel="nofollow">
+					<i><img src="http://www.aihuhua.com/apps/weiba/Appinfo/icon_app.png" width="16" height="16" />护花山庄</i>
+				</a></li>			<li><a href="http://www.aihuhua.com/index.php?app=public&mod=App&act=addapp" rel="nofollow"><i><img src="http://static.huashichang.com/image/more.png" width="16" height="16" />更多应用</a></i></li>
+      	</ul>
+	</div>
+
+	<div class="cate" style="margin-left:160px;display:inline;" >
+			<a href="javascript:void(0);" rel="nofollow" class="title">特色<em class="ico"></em></a>
+			<div class="catelist fulllist">
+			    <a href="/huahui/lengshuihua.html" target="_blank" title="冷水花花卉">冷水花</a><a href="/huahui/lvluo.html" target="_blank" title="绿萝花卉">绿萝</a><a href="/huahui/fenyejueming.html" target="_blank" title="粉叶决明花卉">粉叶决明</a><a href="/huahui/qizimei.html" target="_blank" title="七姊妹花卉">七姊妹</a><a href="/huahui/tengbenyueji.html" target="_blank" title="藤本月季花卉">藤本月季</a><a href="/huahui/shanhuhuafengli.html" target="_blank" title="珊瑚花凤梨花卉">珊瑚花凤梨</a><a href="/huahui/huangyangshu.html" target="_blank" title="黄杨树花卉">黄杨树</a><a href="/huahui/ganlan.html" target="_blank" title="橄榄花卉">橄榄</a><a href="/huahui/bingjiao.html" target="_blank" title="冰娇花卉">冰娇</a><a href="/huahui/mangjishi.html" target="_blank" title="莽吉柿花卉">莽吉柿</a><a href="/huahui/hamigua.html" target="_blank" title="哈密瓜花卉">哈密瓜</a><a href="/huahui/xianggua.html" target="_blank" title="香瓜花卉">香瓜</a>			</div>		</div><div class="cate"  >
+			<a href="javascript:void(0);" rel="nofollow" class="title">类别<em class="ico"></em></a>
+			<div class="catelist fulllist">
+			    <a href="/hua/quwei/" target="_self" title="趣味类花卉">趣味类</a><a href="/hua/fangxiang/" target="_self" title="芳香类花卉">芳香类</a><a href="/hua/guanguo/" target="_self" title="观果类花卉">观果类</a><a href="/hua/guanhua/" target="_self" title="观花类花卉">观花类</a><a href="/hua/guanye/" target="_self" title="观叶类花卉">观叶类</a><a href="/hua/guanjing/" target="_self" title="观茎类花卉">观茎类</a><a href="/hua/jieqing/" target="_self" title="节庆类花卉">节庆类</a><a href="/hua/chuidiao/" target="_self" title="垂吊类花卉">垂吊类</a><a href="/hua/guoshu/" target="_self" title="果蔬类花卉">果蔬类</a><a href="/hua/dibeicaoping/" target="_self" title="地被草坪花卉">地被草坪</a><a href="/hua/shuipei/" target="_self" title="水培类花卉">水培类</a><a href="/hua/penzai/" target="_self" title="盆栽类花卉">盆栽类</a>			</div>		</div><div class="cate"  >
+			<a href="javascript:void(0);" rel="nofollow" class="title">功能<em class="ico"></em></a>
+			<div class="catelist fulllist">
+			    <a href="/hua/guanshang/" target="_self" title="观赏花卉">观赏</a><a href="/hua/jinghuakongqi/" target="_self" title="净化空气花卉">净化空气</a><a href="/hua/xijiaquan/" target="_self" title="吸甲醛花卉">吸甲醛</a><a href="/hua/fangfushe/" target="_self" title="防辐射花卉">防辐射</a><a href="/hua/tishen/" target="_self" title="提神花卉">提神</a><a href="/hua/shajun/" target="_self" title="杀菌花卉">杀菌</a><a href="/hua/quwen/" target="_self" title="驱蚊花卉">驱蚊</a><a href="/hua/yaoyong/" target="_self" title="药用花卉">药用</a>			</div>		</div><div class="cate"  >
+			<a href="javascript:void(0);" rel="nofollow" class="title">环境<em class="ico"></em></a>
+			<div class="catelist fulllist">
+			    <a href="/hua/yangtai/" target="_self" title="阳台花卉">阳台</a><a href="/hua/chuangtai/" target="_self" title="窗台花卉">窗台</a><a href="/hua/tingyuan/" target="_self" title="庭院花卉">庭院</a><a href="/hua/louding/" target="_self" title="楼顶花卉">楼顶</a><a href="/hua/keting/" target="_self" title="客厅花卉">客厅</a><a href="/hua/canting/" target="_self" title="餐厅花卉">餐厅</a><a href="/hua/chaji/" target="_self" title="茶几花卉">茶几</a><a href="/hua/chufang/" target="_self" title="厨房花卉">厨房</a><a href="/hua/bangongshi/" target="_self" title="办公室花卉">办公室</a><a href="/hua/bangongzhuo/" target="_self" title="办公桌花卉">办公桌</a><a href="/hua/shufang/" target="_self" title="书房花卉">书房</a><a href="/hua/woshi/" target="_self" title="卧室花卉">卧室</a><a href="/hua/weishengjian/" target="_self" title="卫生间花卉">卫生间</a><a href="/hua/yuanlin/" target="_self" title="园林花卉">园林</a>			</div>		</div><div class="cate"  >
+			<a href="javascript:void(0);" rel="nofollow" class="title">花期<em class="ico"></em></a>
+			<div class="catelist fulllist">
+			    <a href="/hua/chunji/" target="_self" title="春季花卉">春季</a><a href="/hua/xiaji/" target="_self" title="夏季花卉">夏季</a><a href="/hua/qiuji/" target="_self" title="秋季花卉">秋季</a><a href="/hua/dongji/" target="_self" title="冬季花卉">冬季</a><a href="/hua/siji/" target="_self" title="四季花卉">四季</a><a href="/hua/bukaihua/" target="_self" title="不开花花卉">不开花</a><a href="/hua/xiyang/" target="_self" title="喜阳花卉">喜阳</a><a href="/hua/xiyin/" target="_self" title="喜阴花卉">喜阴</a>			</div>		</div><div class="cate"  >
+			<a href="javascript:void(0);" rel="nofollow" class="title">难度<em class="ico"></em></a>
+			<div class="catelist fulllist">
+			    <a href="/hua/rongyi/" target="_self" title="容易养殖花卉">容易养殖</a><a href="/hua/liuxin/" target="_self" title="留心养殖花卉">留心养殖</a><a href="/hua/jingxin/" target="_self" title="精心养护花卉">精心养护</a><a href="/hua/zhuanye/" target="_self" title="专业养护花卉">专业养护</a>			</div>		</div>
+	<div class="login"><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qzone&addon=Login&hook=login_sync_other" title="QQ账号登录"  rel="nofollow" class="qq" target="_blank">QQ登录</a><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=sina&addon=Login&hook=login_sync_other" title="新浪微博登录" rel="nofollow"  class="weibo" target="_blank">新浪微博</a></div>
+	
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.navigation .cate').mouseover(function(){
+		$(this).addClass('cateHover');
+		$(this).find('.catelist').show();
+	});
+	$('.navigation .cate').mouseleave(function(){
+		$(this).removeClass('cateHover');
+		$(this).find('.catelist').hide();
+	});
+});
+</script>
+
+
+
+
+<!-- footer -->
+<div class="footer">
+	<div class="cont">
+		<div class="record">©2013 花卉网 <a href="http://www.beian.miit.gov.cn/" target="_blank">沪ICP备12046703号-5</a></div>
+
+				<div class="link">
+			<a href="http://www.aihuhua.com/sitemap.html" target="_self" title="网站地图">网站地图</a> ·<a href="http://www.aihuhua.com/hua/" target="_self" title="花卉">花卉</a> ·<a href="http://www.aihuhua.com/hua/" target="_self" title="花卉大全">花卉大全</a> ·<a href="http://www.aihuhua.com" target="_self" title="花卉网">花卉网</a> ·<a href="http://www.aihuhua.com/baike/" target="_self" title="花的种类">花的种类</a> ·<a href="http://www.aihuhua.com" target="_self" title="花">花</a> ·<a href="http://www.aihuhua.com/hua/keting/" target="_self" title="室内花卉">室内花卉</a> ·<a href="http://www.aihuhua.com/hua/" target="_self" title="花卉图片及名称大全">花卉图片及名称大全</a> ·<a href="http://www.aihuhua.com/hua/" target="_blank" title="花的图片">花的图片</a> ·		</div>
+		
+		<div class="tips">护花网(<a href="http://www.aihuhua.com" title="花卉网">花卉网</a>www.aihuhua.com) 这里是花儿成长的地方，聚焦亿万护花使者，同花儿一起茁壮成长！</div>
+
+	</div>
+</div>
+
+<link href="/addons/plugin/TopStick/html/css/02.css" rel="stylesheet" type="text/css" />
+<!--二维码-->
+<div id="webcode" class="webcode" style="bottom:160px;">
+    <dl class="coderedpackage hide"><dt>支付宝天天送红包</dt><dd></dd></dl>
+	<dl class="codeweixin"><dt>- 微信公众号 -</dt><dd></dd></dl>
+	<dl class="codeimg"><dt>- 官方网站 -</dt><dd></dd></dl>
+	<dl class="codeandroid hide" style="display:none;"><dt>- 安卓APP -</dt><dd></dd></dl>
+</div>
+
+<!--统计-->
+<div id="site_analytics_code" style="display:none;"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2f9621f6b3c69c2c113bd7255bdaea02";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></div>
+
+<!--分享-->
+<script language="javascript" type="text/javascript">(function($){ $('#bdshare').width(208); $('#bdshare').attr('class','bdsharebuttonbox'); $('#bdshare').html('<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_huaban" data-cmd="huaban" title="分享到花瓣"></a>'); })(jQuery);</script>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+</body>
+</html>

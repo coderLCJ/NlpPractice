@@ -56,7 +56,7 @@ for step in range(EPOCHS):
     y = torch.from_numpy(y_np[:, np.newaxis])
     outs, h_state = rnn(x, h_state)
 
-    h_state = h_state.detach()  # 这一步很重要 不计算梯度将隐藏层数值传递
+    # h_state = h_state.detach()  # 这一步很重要 不计算梯度将隐藏层数值传递
     rnn.zero_grad()
     loss = criterion(outs, y)
     loss.backward()

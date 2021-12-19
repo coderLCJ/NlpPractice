@@ -1,20 +1,17 @@
 # -*- coding: utf-8 -*-#
 
 # ---------------------------------------------
-# Name:         test
-# Description:  
+# Name:         loadData
+# Description:
 # Author:       Laity
 # Date:         2021/11/10
 # ---------------------------------------------
-from time import sleep
-
-import matplotlib.pyplot as plt
-import torch
 import torch.nn as nn
+import torch
 
-x = torch.randn(128, 28, 256)
-x = x.permute(0, 2, 1)
-print(x.shape)
-net = nn.Conv1d(256, 100, kernel_size=(2,))
-y = net(x)
-print(y.shape)
+input = torch.randn(32, 64, 128)
+LSTM = nn.LSTM(input_size=128, hidden_size=64, batch_first=True, bidirectional=False)
+output, (hn, cn) = LSTM(input)
+print(output.shape)
+print(hn.shape)
+print(cn.shape)
