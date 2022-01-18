@@ -6,6 +6,9 @@ print('''  _   _      _ _    __        __         _     _
  |  _  |  __/ | | (_) \\ V  V / (_) | |  | | (_| |
  |_| |_|\\___|_|_|\\___/ \\_/\\_/ \\___/|_|  |_|\\__,_|
 ''')
+from math import *
+import torch
 
-x = torch.tensor([1, 2, 3, 1, 3, 9])
-print(torch.argmax(x) == 5)
+x = torch.randn(10, 3)
+
+print(-log(0.5, 10))
