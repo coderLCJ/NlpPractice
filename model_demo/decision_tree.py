@@ -39,13 +39,17 @@ y_train = pd.DataFrame(["否", "否", "是", "是", "否",
 # 数据预处理
 le_x = preprocessing.LabelEncoder()
 le_x.fit(np.unique(X_train))
+print(X_train)
 X_train = X_train.apply(le_x.transform)
+print(X_train)
 le_y = preprocessing.LabelEncoder()
 le_y.fit(np.unique(y_train))
 y_train = y_train.apply(le_y.transform)
 # 调用sklearn.DT建立训练模型
 model_tree = DecisionTreeClassifier()
 model_tree.fit(X_train, y_train)
+
+
 
 # 可视化
 dot_data = tree.export_graphviz(model_tree, out_file=None,
@@ -54,4 +58,3 @@ dot_data = tree.export_graphviz(model_tree, out_file=None,
                                     filled=True, rounded=True,
                                     special_characters=True)
 graph = graphviz.Source(dot_data)
-print(graph)
