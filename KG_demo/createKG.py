@@ -136,7 +136,10 @@ def createFlower(graph):
 
 
 if __name__ == '__main__':
-    test_graph = Graph("http://127.0.0.1:7474/browser/", username="neo4j", password="123456789")
+    try: 
+      test_graph = Graph("http://127.0.0.1:7474/browser/", username="neo4j", password="123456789")
+    except ValueError:
+      test_graph = Graph("http://127.0.0.1:7474/browser/", auth=("neo4j", "123456789"))
     # test_graph.run('match(n) detach delete n')
     # createEntity0(test_graph)
     # createFlower(test_graph)
