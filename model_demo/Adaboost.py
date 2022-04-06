@@ -44,7 +44,7 @@ class Adaboost:
         return self.sign(all_s)
 
     # 选择最优划分
-    def choose_cls(self):
+    def choose_cls(self, x, y):
         ret_G_x = None
         ret_v = 0
         ei = self.N
@@ -72,5 +72,4 @@ class Adaboost:
             new_D = [self.D[i] / Zm * exp(-ai * y[i] * Gx_i(x[i])) for i in range(len(x))]
             self.D = new_D
             self.cls.append(Gx)
-
 
