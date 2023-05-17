@@ -12,7 +12,14 @@
 
 ```c++
 .
-├── KG_demo：KG的一些demo
+├── KG_demo：构建KG的demo
+│   ├── README.md
+│   ├── base_html.txt
+│   ├── crawler.py
+│   ├── createKG.py
+│   ├── data
+│   ├── data_down
+│   └── test.py
 ├── NLP_Contest：NLP contest部分测试代码
 ├── NLP_Practice：一些NLP任务demo
 ├── Project_demo：一些项目demo
