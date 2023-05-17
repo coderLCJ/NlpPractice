@@ -2,24 +2,27 @@
 
 ------
 
-> AttributeError: module 'tensorflow._api.v2.io.gfile' has no attribute 'get_filesystem'
+> 本仓库包含NLP和KG的一些课程以及项目练习代码。
 
-解决办法:
+### 一、更新记录
 
-> ```python
-> import tensorflow as tf
-> import tensorboard as tb
-> tf.io.gfile = tb.compat.tensorflow_stub.io.gfile
-> ```
+[2023/05/17]：重新整理一下仓库文件， 修改readme文件，时间比较久远有些项目代码出处已经遗忘了，后面慢慢更新。
 
-> ```python
-> 保存模型
-> # torch.save(rnn.state_dict(), 'rnn.pt')    保存
-> m_state_dict = torch.load('linear.pt')
-> new_m = Net()
-> new_m.load_state_dict(m_state_dict)
-> [w, b] = new_m.parameters()
-> w = w.item()
-> b = b.item()
-> print(w, b)
-> ```
+### 二、仓库结构
+
+```c++
+.
+├── KG_demo：KG的一些demo
+├── NLP_Contest：NLP contest部分测试代码
+├── NLP_Practice：一些NLP任务demo
+├── Project_demo：一些项目demo
+├── PyTorch：随手练习
+├── README.md
+├── TensorFlow：随手练习
+├── TextPreprocessing：文本处理代码
+├── Train
+├── lesson：一些课程简单例子
+├── model_demo
+└── temp
+```
+
