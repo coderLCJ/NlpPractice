@@ -20,6 +20,8 @@
 │   ├── data
 │   ├── data_down
 │   └── test.py
+├── NLP_Project：一些NLP项目
+│   ├── SPACES：长文本摘要、长对话摘要
 ├── NLP_Contest：NLP contest部分测试代码
 ├── NLP_Practice：一些NLP任务demo
 ├── Project_demo：一些项目demo
