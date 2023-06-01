@@ -12,6 +12,8 @@
 
 [2023/05/28]：新增Python RPC demo，用于模型服务部署。
 
+[2023/06/01]：新增text_classifier_pytorch，基于pytorch的文本分类框架。
+
 ### 二、仓库结构
 
 ```c++
@@ -29,6 +31,7 @@
 │   ├── mT5：T5 finetune框架
 │   ├── PhraseMining：短语挖掘pipeline
 │   ├── RPC_demo：rpc模型部署demo
+│   ├── text_classifier_pytorch：文本分类框架
 ├── LLM：大模型相关项目
 ├── NLP_Contest：NLP contest部分测试代码
 ├── NLP_Task：一些NLP任务demo
