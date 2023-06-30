@@ -14,6 +14,8 @@
 
 [2023/06/01]：新增text_classifier_pytorch，基于pytorch的文本分类框架。
 
+[2023/07/01]：新增LLM微调框架，支持baichuan、LLAMA等。
+
 ### 二、仓库结构
 
 ```c++
